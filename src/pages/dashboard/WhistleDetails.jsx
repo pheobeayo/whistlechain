@@ -61,7 +61,8 @@ const WhistleDetails = () => {
             <div className="flex gap-2"><button className='bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center' > <FaArrowUp /> Upvote</button>
               <button className='bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center' > <FaLongArrowAltDown />Downvote</button></div>
           </div>
-        </section></div>
+        </section>
+        </div>
 
 
     </main>
