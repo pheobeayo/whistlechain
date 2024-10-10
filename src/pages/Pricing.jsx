@@ -9,7 +9,7 @@ const Pricing = () => {
                 <div className="w-screen bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A]">
                     <div className="lg:w-[90%] md:w-[90%] w-[100%] mx-auto text-center p-8 lg:px-0 md:px-0 ">
                         <div className="flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-0 md:px-0">
-                            <div className='bg-[#040927] lg:w-[45%] md:w-[45%] w-[100%] border-gradient-to-r  from-[#69EACB] via-[#EACCF8] to-[#6654F1]  border-2 rounded-lg p-16'>
+                            <div className='bg-[#040927] lg:w-[45%] md:w-[45%] w-[100%] border-gradient-to-r  from-[#69EACB] via-[#EACCF8] to-[#6654F1]  border rounded-2xl p-16'>
 
                                 <h3 className='font-bold mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] font-titiliumweb text-left'> Freemium Plan</h3>
                                 <p className='flex gap-2 text-white my-4 text-justify'><img src={mark} alt='' /><span>Whistleblowers: Can submit only one report per day</span></p>
@@ -19,7 +19,7 @@ const Pricing = () => {
 
 
                             </div>
-                            <div className='bg-[#040927] lg:w-[45%] md:w-[45%] w-[100%] border-gradient-to-r  from-[#69EACB] via-[#EACCF8] to-[#6654F1]  border-2 rounded-lg p-5'>
+                            <div className='bg-[#040927] lg:w-[45%] md:w-[45%] w-[100%] border-gradient-to-r  from-[#69EACB] via-[#EACCF8] to-[#6654F1]  border rounded-2xl p-5'>
                                 <h3 className='font-bold mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] text-left font-titiliumweb'> Premium Plan</h3>
                                 <p className='flex gap-2 text-white my-4 text-justify'><img src={mark} alt='' /><span>Whistleblowers: Unlimited report submissions. Access additional
                                     privacy settings, selecting specific audiences or groups within
@@ -36,7 +36,7 @@ const Pricing = () => {
             </section>
             <section className="bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A] h-full">
                 <div className="bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A] mt-16 ">
-                    <div className=" border-white rounded-lg lg:w-[90%] md:w-[90%] w-[100%] mx-auto border py-2 bg-[#171A3D]">
+                    <div className=" border-white rounded-2xl lg:w-[90%] md:w-[90%] w-[100%] mx-auto border py-2 bg-[#171A3D]">
                         <div className="flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-0 md:px-0">
                             <div className="lg:w-[45%] md:w-[45%] w-[100%]">
                                 <img
