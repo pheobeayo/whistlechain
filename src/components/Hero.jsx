@@ -4,6 +4,7 @@ import blockchain from "../assets/blockchain.svg";
 import anonymous from '../assets/anonymous.svg';
 import howImage from '../assets/howImage.svg';
 import Purchase from '../assets/Purchase.svg';
+import {Link} from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -24,9 +25,10 @@ const Hero = () => {
                                 safely and help ensure transparency.
                             </p>
                             <div className="mt-6">
-                                <button className="bg-[#15BFFD] rounded-3xl p-4 text-[#101415] mr-4 lg:text-[20px] md:text-[20px] text-[18px]">
+                              <Link to='/submit-misconduct'>  <button className="bg-[#15BFFD] rounded-3xl p-4 text-[#101415] mr-4 lg:text-[20px] md:text-[20px] text-[18px]">
                                     Whistleblow
                                 </button>
+                                </Link>
                                 <button className="border border-[#15BFFD] rounded-3xl p-4 text-white bg-transparent lg:text-[20px] md:text-[20px] text-[18px]">
                                     Validate
                                 </button>
