@@ -17,6 +17,7 @@ const Dashboard = lazy(() => import("../pages/dashboard/Dashboard"));
 const WhistleDetails = lazy(() => import("../pages/dashboard/WhistleDetails"));
 const Message = lazy(() => import("../pages/dashboard/Message"));
 const Reports = lazy(() => import("../pages/Reports"));
+const ReportUpdate = lazy(() => import("../pages/dashboard/ReportUpdate"));
 const Pricing = lazy(() => import("../pages/Pricing"));
 
 
@@ -25,14 +26,15 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route>
     <Route path="/" element={<HomeLayout />} >
       <Route index element={<Home />} />
-      <Route path="/submit-misconduct" element={<SubmitMisConduct />} />
       <Route path="/reports" element={<Reports />} />
       <Route path='/pricing' element={<Pricing/>}/>
 
     </Route>
     <Route path="/dashboard" element={<DashboardLayout />} >
       <Route index element={<Dashboard />} />
-      <Route path="whistle-details" element={<WhistleDetails />} />
+      <Route path="submit-misconduct" element={<SubmitMisConduct />} />
+      <Route path="reportUpdate" element={<ReportUpdate />} />
+      <Route path="reportUpdate/:id" element={<WhistleDetails />} />
       <Route path="message" element={<Message />} />
     </Route>
   </Route>

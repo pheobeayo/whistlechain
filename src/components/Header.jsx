@@ -18,7 +18,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/marketplace"
+            to="/pricing"
             className="text-white hover:text-[#15BFFD] hover:font-[700] mr-10 text-[18px]"
           >
             Pricing
@@ -29,14 +29,9 @@ const Header = () => {
           >
             Reports
           </NavLink>
-          <NavLink
-            to="/dashboard"
-            className="text-white hover:text-[#15BFFD] hover:font-[700] mr-10 text-[18px]"
-          >
-            Dashboard
-          </NavLink>
           
         </nav>
+        <w3m-button /> 
        
       </div>
       <div className="w-[95%] mx-auto flex justify-between lg:hidden md:hidden relative">
