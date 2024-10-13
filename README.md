@@ -82,13 +82,19 @@ Whistlechain provides a secure, decentralized, and anonymous platform for whistl
 
 
 ## Additional Information
-* Design: ``` https://www.figma.com/design/IZcqEQ48KUvMsSMcoXDO9o/WhistleChain?node-id=0-1&node-type=canvas&t=UQJ2ixLoy95ePYnV-0 ``` 
+* Design: ```bash
+ https://www.figma.com/design/IZcqEQ48KUvMsSMcoXDO9o/WhistleChain?node-id=0-1&node-type=canvas&t=UQJ2ixLoy95ePYnV-0 
+ ``` 
 
 
-* Repo:  ``` https://github.com/pheobeayo/whistlechain ``` 
+* Repo:  ```bash
+ https://github.com/pheobeayo/whistlechain 
+ ``` 
 
 
-* PitchDeck: ``` https://www.canva.com/design/DAGTZMxUC9U/efO0ZBcFvo_gar7of_LxkA/view?utm_content=DAGTZMxUC9U&utm_campaign=designshare&utm_medium=link&utm_source=editor ```
+* PitchDeck: ```bash
+ https://www.canva.com/design/DAGTZMxUC9U/efO0ZBcFvo_gar7of_LxkA/view?utm_content=DAGTZMxUC9U&utm_campaign=designshare&utm_medium=link&utm_source=editor 
+ ```
 
 * `Whistlechain deployed to base sepolia: 0x011ebf60Ea828ec66C2ED546FfBf7555b3A4F3cd `
 
