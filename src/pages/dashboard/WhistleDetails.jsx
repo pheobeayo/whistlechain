@@ -12,6 +12,8 @@ import {
 } from "@web3modal/ethers/react";
 import { useEffect, useState } from "react";
 import { FaArrowCircleDown } from "react-icons/fa";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const WhistleDetails = () => {
   const { id } = useParams()
@@ -37,6 +39,59 @@ const WhistleDetails = () => {
       console.error(error);
     }
   };
+
+  async function handleUpvote() {
+    if (!isSupportedChain(chainId)) return console.error("Wrong network");
+    const readWriteProvider = getProvider(walletProvider);
+    const signer = await readWriteProvider.getSigner();
+
+    const contract = getWhistleChainContract(signer);
+
+    try {  
+      const transaction = await contract.vote(id, true);
+      const receipt = await transaction.wait();
+
+      if (receipt.status) {
+        return toast.success("Upvote Successful!", {
+          position: "top-center",
+        });      
+      }
+      toast.error("Upvote Failed!", {
+        position: "top-center",
+      });
+    } catch (error) {
+      toast.error("Upvote Failed!", {
+        position: "top-center",
+      });
+    }
+  };
+
+  async function handleDownvote() {
+    if (!isSupportedChain(chainId)) return console.error("Wrong network");
+    const readWriteProvider = getProvider(walletProvider);
+    const signer = await readWriteProvider.getSigner();
+
+    const contract = getWhistleChainContract(signer);
+
+    try {  
+      const transaction = await contract.vote(id, false);
+      const receipt = await transaction.wait();
+
+      if (receipt.status) {
+        return toast.success("Downvote Successful!", {
+          position: "top-center",
+        });      
+      }
+      toast.error("Downvote Failed!", {
+        position: "top-center",
+      });
+    } catch (error) {
+      toast.error("Downvote Failed!", {
+        position: "top-center",
+      });
+    }
+  };
+
 
   useEffect(() => {
     handleGetdetails()
@@ -108,11 +163,11 @@ const WhistleDetails = () => {
               Misconduct: <span>{categoryName}</span>
             </p>
             <div className="flex gap-2">
-              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center">
+              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center" onClick={handleUpvote}>
                 {" "}
                 <FaArrowUp /> Upvote
               </button>
-              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center">
+              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center" onClick={handleDownvote}>
                 {" "}
                 <FaLongArrowAltDown />
                 Downvote

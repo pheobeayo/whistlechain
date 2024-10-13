@@ -3,7 +3,7 @@ import whistleImage from "../../assets/whistleImage.svg";
 import vector from "../../assets/vector.svg";
 import useGetAllReports from "../../Hooks/useGetAllReports";
 
-const Reports = () => {
+const ReportUpdate = () => {
   const allReports = useGetAllReports();
   const navigate = useNavigate()
 
@@ -70,7 +70,7 @@ const Reports = () => {
                 <h3 className="font-bold mt-4 lg:text-[20px] md:text-[20px] text-[18px]  text-[#15BFFD]">
                   {info.title}
                 </h3>
-                <p className="flex gap-2">
+                <p className="flex gap-2 text-white">
                   Misconduct: <span>{categoryName}</span>
                 </p>
                 <p className="text-white font-bold">{detailsSnippet}</p>
@@ -86,4 +86,4 @@ const Reports = () => {
   );
 };
 
-export default Reports;
+export default ReportUpdate;

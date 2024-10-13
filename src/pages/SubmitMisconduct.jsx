@@ -31,22 +31,18 @@ const SubmitMisConduct = () => {
         reportDescription,
         category
       );
-      console.log("transaction: ", transaction);
       const receipt = await transaction.wait();
 
       if (receipt.status) {
-        return toast.success("Report Creation successful!", {
+        return toast.success("Report Creation Successful!", {
           position: "top-center",
-        });
-        
+        });      
       }
-
-      toast.error("Report Creation failed!", {
+      toast.error("Report Creation Failed!", {
         position: "top-center",
       });
     } catch (error) {
-      console.error(error);
-      toast.error("Report Creation failed!", {
+      toast.error("Report Creation Failed!", {
         position: "top-center",
       });
     } finally {
@@ -55,8 +51,6 @@ const SubmitMisConduct = () => {
       setReportDescription("");
     }
   }
-
-  console.log(category)
 
   return (
     <main>
