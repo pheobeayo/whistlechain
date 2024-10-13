@@ -1,7 +1,10 @@
 import useGetAllReports from "../../Hooks/useGetAllReports";
+import useGetUserDetails from "../../Hooks/useGetUserDetails";
 
 const Dashboard = () => {
     const allReports = useGetAllReports()
+    const userDetails = useGetUserDetails()
+
     const categories = [
         "Corruption",
         "Harassment",
@@ -11,8 +14,16 @@ const Dashboard = () => {
         "Others",
       ];
 
+    const subscription = [ 'Free', 'Weekly', 'Monthly', 'Yearly' ]
+
   return (
-    <main className="bg-[#040927] w-screen h-full">
+    <main className="bg-[#040927] w-[100%] h-full">
+       <div className="rounded-lg border border-white py-4 px-8 text-white flex justify-between items-center lg:flex-row md:flex-row flex-col">
+            <p className="text-[20px] font-bold">Profile <br /> Details</p>
+            <p>Subscription Plan: {subscription[Number(userDetails[0])]}</p>
+            <p>Report Count: {Number(userDetails[1])}</p>
+            <p>Vote Count: {Number(userDetails[2])}</p>
+        </div>
       <div className="w-[95%] mx-auto p-8">
         <div className="flex lg:flex-row md:flex-row flex-col gap-2 my-4">
           <div className="relative w-[40%]">
@@ -50,9 +61,10 @@ const Dashboard = () => {
           <h3 className="font-bold mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb">
             All Reports Submitted
           </h3>
-          <table className="table-fixed border-separate border border-600 rounded-lg  border-spacing-2 w-[70%]">
+          <table className="table-fixed border-separate border border-600 rounded-lg  border-spacing-2 w-[100%]">
             <thead className="p-4">
               <tr className="text-white">
+                <th className="border border-white">ReportID</th>
                 <th className="border border-white">Reports</th>
                 <th className="border border-white">Misconduct</th>
                 <th className="border border-white">Track </th>
@@ -64,6 +76,7 @@ const Dashboard = () => {
                 const categoryName = categories[categoryIndex] || "Unknown";
                 
               return  (<tr>
+                <td className="border border-white">WCW-IV-00{Number(info.id)}</td>
                 <td className="border border-white">
                   {info.title}
                 </td>

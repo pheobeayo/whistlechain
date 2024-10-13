@@ -56,11 +56,10 @@ const ReportUpdate = () => {
           const detailsSnippet = info.details.split(' ').slice(0, 10).join(' ') + (info.details.split(' ').length > 20 ? '...' : '');
 
           return (
-            <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg">
+            <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg" key={info.id}>
               <Link
                 to={`/dashboard/reportUpdate/${info.id}`}
                 className="text-white"
-                key={info.id}
               >
                 <img
                   src={whistleImage}
