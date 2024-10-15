@@ -21,11 +21,10 @@ const ReportUpdate = () => {
       <section className="bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A]">
         <div className="bg-[#040927]">
           <div
-            className="w-[100%] mx-auto text-center p-8 lg:px-4 md:px-4 border border-white rounded-2xl"
+            className="lg:w-[100%] md:w-[100%] w-[100%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover"
             style={{
               backgroundImage: `url(${vector})`,
-              backgroundSize: "30%",
-              backgroundPosition: "left bottom",
+              backgroundSize: "cover",
             }}
           >
             <h1 className=" text-white lg:text-[38px] md:text-[38px] text-[30px] font-titiliumweb font-[700] my-4">
@@ -56,7 +55,7 @@ const ReportUpdate = () => {
           const detailsSnippet = info.details.split(' ').slice(0, 10).join(' ') + (info.details.split(' ').length > 20 ? '...' : '');
 
           return (
-            <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg" key={info.id}>
+            <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4" key={info.id}>
               <Link
                 to={`/dashboard/reportUpdate/${info.id}`}
                 className="text-white"

@@ -21,7 +21,7 @@ const Hero = () => {
                 <div>
                     <div className="flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-0 md:px-0">
                         <div className="lg:w-[50%] md:w-[50%] w-[90%] p-16">
-                            <h1 className="text-white font-titiliumweb lg:text-[72px] md:text-[72px] text-[60px] font-[700]">
+                            <h1 className="text-white font-titiliumweb lg:text-[72px] md:text-[72px] text-[40px] font-[700]">
                                 Empowering
                                 <br />Anonymous
                                 <br /><span className='text-[#15BFFD]'>Whistleblowing</span>

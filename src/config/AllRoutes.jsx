@@ -11,7 +11,7 @@ import PageLoader from "../components/Loader/PageLoader";
 
 const Home = lazy(() => import("../pages/Home"));
 const HomeLayout = lazy(() => import('../layout/HomeLayout'));
-const SubmitMisConduct = lazy(() => import('../pages/SubmitMisconduct'))
+const SubmitMisConduct = lazy(() => import('../pages/dashboard/SubmitMisconduct'))
 const DashboardLayout = lazy(() => import('../layout/DashboardLayout'));
 const Dashboard = lazy(() => import("../pages/dashboard/Dashboard"));
 const WhistleDetails = lazy(() => import("../pages/dashboard/WhistleDetails"));

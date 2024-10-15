@@ -58,12 +58,12 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="w-full border-white p-8 rounded-lg">
-          <h3 className="font-bold mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb">
+          <h3 className="font-medium mt-4 text-white lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-serif">
             All Reports Submitted
           </h3>
-          <table className="table-fixed border-separate border border-600 rounded-lg  border-spacing-2 w-[100%]">
+          <table className="table-fixed  border border-400 rounded-2xl  border-spacing-2 w-[100%]">
             <thead className="p-4">
-              <tr className="text-white">
+              <tr className="text-white font-serif font-normal">
                 <th className="border border-white">ReportID</th>
                 <th className="border border-white">Reports</th>
                 <th className="border border-white">Misconduct</th>
@@ -75,8 +75,8 @@ const Dashboard = () => {
                 const categoryIndex = Number(info.category);
                 const categoryName = categories[categoryIndex] || "Unknown";
                 
-              return  (<tr>
-                <td className="border border-white">WCW-IV-00{Number(info.id)}</td>
+              return  (<tr className="font-serif font-normal">
+                <td className="border border-white font-serif font-normal">WCW-IV-00{Number(info.id)}</td>
                 <td className="border border-white">
                   {info.title}
                 </td>

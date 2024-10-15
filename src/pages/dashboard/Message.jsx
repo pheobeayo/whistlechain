@@ -42,44 +42,44 @@ const Message = () => {
                 <section className='flex lg:flex-row md:flex-row flex-col justify-between'>
                     <div className=' bg-[#171A3D] lg:w-[45%] md:w-[45%] w-[100%]  border rounded-lg p-4'>
 
-                        <h3 className='font-bold mt-4 text-[#15BFFD] lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb'>Messages</h3>
-                        <p className='flex justify-between text-white my-4 font-bold font-titiliumweb'>Anonymous <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px] font-titiliumweb'>Hey, i chatted you up concerning the report you....
+                        <h3 className='font-bold mt-4 text-[#15BFFD] lg:mt-0 md:mt-0 lg:text-[24px] md:text-[24px] text-[18px] capitalise font-serif'>Messages</h3>
+                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>Anonymous <span>Sun</span></p>
+                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px] font-light font-serif'>Hey, i chatted you up concerning the report you....
                         </p>
-                        <p className='flex justify-between text-white my-4 font-bold font-titiliumweb'>Anonymous <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px] font-titiliumweb'>Hey, i chatted you up concerning the report you....
+                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>Anonymous <span>Sun</span></p>
+                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px] font-light font-serif'>Hey, i chatted you up concerning the report you....
                         </p>
-                        <p className='flex justify-between text-white my-4 font-bold font-titiliumweb'>Anonymous <span>Sun</span></p>
-                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px] font-titiliumweb'>Hey, i chatted you up concerning the report you....
+                        <p className='flex justify-between text-white my-4 font-semibold font-serif'>Anonymous <span>Sun</span></p>
+                        <p className=' mt-4 my-4 text-white lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-light font-serif'>Hey, i chatted you up concerning the report you....
                         </p>
 
                     </div>
                     <div className=' lg:w-[52%] md:w-[52%] w-[100%]'>
-                        <div className="border rounded-lg p-4 my-5">
+                        <div className="border bg-[#171A3D] rounded-lg p-4 my-4">
 
-                            <p className='text-white lg:text-[20px] md:text-[20px] text-[16px] font-bold font-titiliumweb'>You</p>
-                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px]  font-titiliumweb'>
+                            <p className='text-white lg:text-[18px] md:text-[18px] text-[14px] font-bold font-serif'>You</p>
+                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-serif'>
                                 Hey, i messaged you because of the report you posted recently</p>
 
                         </div>
-                        <div className="border rounded-lg p-4 my-4">
+                        <div className="border bg-[#171A3D] rounded-lg p-4 my-4">
 
-                            <p className='text-white lg:text-[20px] md:text-[20px] text-[16px] font-bold font-titiliumweb'>You</p>
-                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px]  font-titiliumweb'>
+                            <p className='text-white lg:text-[18px] md:text-[18px] text-[16px] font-bold font-serif'>You</p>
+                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-serif'>
                                 Hey. Okay. How can I help you?</p>
 
                         </div>
-                        <div className="border rounded-lg p-4">
+                        <div className="border bg-[#171A3D] rounded-lg p-4 my-4">
 
-                            <p className='text-white lg:text-[20px] md:text-[20px] text-[16px] font-bold font-titiliumweb'>You</p>
-                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px]  font-titiliumweb'>
+                            <p className='text-white lg:text-[18px] md:text-[18px] text-[16px] font-bold font-serif'>You</p>
+                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-serif'>
                                 Hey, i messaged you because of the report you posted recently</p>
 
                         </div>
-                        <div className="border rounded-lg p-4">
+                        <div className="border bg-[#171A3D] rounded-lg p-4">
 
-                            <p className='text-white lg:text-[20px] md:text-[20px] text-[16px] font-bold font-titiliumweb'>You</p>
-                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[20px] md:text-[20px] text-[16px]  font-titiliumweb'>
+                            <p className='text-white lg:text-[18px] md:text-[18px] text-[16px] font-bold font-serif'>You</p>
+                            <p className='mt-4 text-white text-justify lg:mt-0 md:mt-0 lg:text-[18px] md:text-[18px] text-[16px]  font-serif'>
                                 Hey. Okay. How can I help you?</p>
 
                         </div>

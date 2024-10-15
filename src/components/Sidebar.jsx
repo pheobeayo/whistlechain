@@ -18,7 +18,7 @@ const Sidebar = () =>  {
   };
 
   return (
-    <div className='bg-[#040927] w-[20%] text-[rgb(15,22,15)] p-8 py-12 h-[100vh] hidden lg:flex md:flex flex-col border-x-2 border-white '>
+    <div className='bg-[#040927] w-[20%] text-[rgb(15,22,15)] p-8 py-12 h-[100vh] hidden lg:flex md:flex flex-col border-x border-white '>
       <img src={logo} alt='logo'className="mb-20" />
       <NavLink to="/dashboard" className="text-[14px] text-white flex items-center py-4 mb-4 px-4 hover:text-[#15BFFD]" style={({isActive}) => isActive ? activeStyle : null } end><CgHomeAlt className="mr-4" />Dashboard</NavLink>
       <NavLink to="reportUpdate" className="text-[14px] text-white  flex items-center py-4 mb-4 px-6  hover:text-[#15BFFD]" style={({isActive}) => isActive ? activeStyle : null }><BiBox className="mr-4" /> Reports</NavLink>

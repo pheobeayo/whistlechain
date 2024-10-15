@@ -1,8 +1,8 @@
-import Submit from "../assets/Submit.svg";
+import Submit from "../../assets/Submit.svg";
 import { ethers } from "ethers";
-import { getProvider } from "../constants/providers";
-import { isSupportedChain } from "../connection/index";
-import { getWhistleChainContract } from "../constants/contract";
+import { getProvider } from "../../constants/providers";
+import { isSupportedChain } from "../../connection/index";
+import { getWhistleChainContract } from "../../constants/contract";
 import {
   useWeb3ModalAccount,
   useWeb3ModalProvider,
@@ -58,14 +58,14 @@ const SubmitMisConduct = () => {
         <div className="flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-0 md:px-0">
           <div className="lg:w-[45%] md:w-[45%] w-[100%] bg-[#272A4D] py-6 rounded-lg">
             <div className="grid place-items-center">
-              <img src={Submit} alt="" className="w-[70%] pt-8" />
+              <img src={Submit} alt="" className="w-[55%] pt-8" />
             </div>
             <p className="lg:text-[20px] md:text-[20px] text-[15px] font-titiliumweb text-center text-white">
               Empowering anonymous whistle blowing with blockchain
             </p>
           </div>
           <div className="lg:w-[50%] md:w-[50%] w-[90%] p-8 bg-[#040927]">
-            <h1 className="text-3xl font-serif text-white font-bold mt-4 my-20">
+            <h1 className="lg:text-[24px] md:text-[24px] text-[20px] font-serif text-white font-bold mt-4 my-10">
               Submit Misconduct Report
             </h1>
 
@@ -90,9 +90,9 @@ const SubmitMisConduct = () => {
                 name="category"
                 onChange={(e) => setCategory(e.target.value)}
                 placeholder="Description of the misconduct"
-                className=" bg-transparent block  rounded-lg border-0 py-2.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#15BFFD] w-3/4 sm:text-sm sm:leading-6"
+                className=" bg-[#040927] block  rounded-lg border-0 py-2.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#15BFFD] w-3/4 sm:text-sm sm:leading-6"
               >
-                <option value={''}>Select a category---</option>
+                <option value={''} >Select a category---</option>
                 <option value={4}>Fraud</option>
                 <option value={0}>Corruption</option>
                 <option value={3}>Violence</option>
