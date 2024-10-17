@@ -1,29 +1,34 @@
 import useGetAllReports from "../../Hooks/useGetAllReports";
 import useGetUserDetails from "../../Hooks/useGetUserDetails";
+import { useWeb3ModalAccount } from "@web3modal/ethers/react";
 
 const Dashboard = () => {
-    const allReports = useGetAllReports()
-    const userDetails = useGetUserDetails()
+  const allReports = useGetAllReports();
+  const userDetails = useGetUserDetails();
+  const { address } = useWeb3ModalAccount();
+  console.log(allReports);
 
-    const categories = [
-        "Corruption",
-        "Harassment",
-        "Discrimination",
-        "Violence",
-        "Fraud",
-        "Others",
-      ];
+  const categories = [
+    "Corruption",
+    "Harassment",
+    "Discrimination",
+    "Violence",
+    "Fraud",
+    "Others",
+  ];
 
-    const subscription = [ 'Free', 'Weekly', 'Monthly', 'Yearly' ]
+  const subscription = ["Free", "Weekly", "Monthly", "Yearly"];
 
   return (
     <main className="bg-[#040927] w-[100%] h-full">
-       <div className="rounded-lg border border-white py-4 px-8 text-white flex justify-between items-center lg:flex-row md:flex-row flex-col">
-            <p className="text-[20px] font-bold">Profile <br /> Details</p>
-            <p>Subscription Plan: {subscription[Number(userDetails[0])]}</p>
-            <p>Report Count: {Number(userDetails[1])}</p>
-            <p>Vote Count: {Number(userDetails[2])}</p>
-        </div>
+      <div className="rounded-lg border border-white py-4 px-8 text-white flex justify-between items-center lg:flex-row md:flex-row flex-col">
+        <p className="text-[20px] font-bold">
+          Profile <br /> Details
+        </p>
+        <p>Subscription Plan: {subscription[Number(userDetails[0])]}</p>
+        <p>Report Count: {Number(userDetails[1])}</p>
+        <p>Vote Count: {Number(userDetails[2])}</p>
+      </div>
       <div className="w-[95%] mx-auto p-8">
         <div className="flex lg:flex-row md:flex-row flex-col gap-2 my-4">
           <div className="relative w-[40%]">
@@ -71,18 +76,29 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody className="text-white p-4">
-              {allReports.map((info) =>  {
-                const categoryIndex = Number(info.category);
-                const categoryName = categories[categoryIndex] || "Unknown";
-                
-              return  (<tr className="font-serif font-normal">
-                <td className="border border-white font-serif font-normal">WCW-IV-00{Number(info.id)}</td>
-                <td className="border border-white">
-                  {info.title}
-                </td>
-                <td className="border border-white">{categoryName}</td>
-                <td className="border border-white">Track Status</td>
-              </tr>)})}
+              {allReports.length > 0 ? (
+                allReports.map((info) => {
+                  const categoryIndex = Number(info.category);
+                  const categoryName = categories[categoryIndex] || "Unknown";
+
+                  return info.address === address ? (
+                    <tr className="font-serif font-normal" key={info.id}>
+                      <td className="border border-white font-serif font-normal">
+                        WCW-IV-00{Number(info.id)}
+                      </td>
+                      <td className="border border-white">{info.title}</td>
+                      <td className="border border-white">{categoryName}</td>
+                      <td className="border border-white">Track Status</td>
+                    </tr>
+                  ) : null;
+                })
+              ) : (
+                <tr>
+                  <td colSpan={4} className="border border-white text-center">
+                    No Reports yet
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
