@@ -72,11 +72,13 @@ const SubmitMisConduct = () => {
             <input
               type="text"
               placeholder="Title of misconduct"
+              value={title}
               onChange={(e) => setTitle(e.target.value)}
               className="bg-transparent border border-white text-white text-sm font-bold rounded-lg focus:ring-[#15BFFD] focus:border-[#15BFFD] block w-3/4 p-2.5 backdrop-blur-lg mb-4 outline-none"
             />
             <textarea
               type="text"
+              value={reportDescription}
               onChange={(e) => setReportDescription(e.target.value)}
               placeholder="Description of the misconduct"
               className="bg-transparent border border-white text-white text-sm font-bold rounded-lg focus:ring-[#15BFFD] focus:border-[#15BFFD] block w-3/4 p-2.5 backdrop-blur-lg mb-4 outline-none"
@@ -86,6 +88,7 @@ const SubmitMisConduct = () => {
             </label>
             <div className="mt-2">
               <select
+                value={category}
                 id="category"
                 name="category"
                 onChange={(e) => setCategory(e.target.value)}
