@@ -163,11 +163,11 @@ const WhistleDetails = () => {
               Misconduct: <span>{categoryName}</span>
             </p>
             <div className="flex gap-2">
-              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center" onClick={handleUpvote}>
+              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border flex gap-2 p-4 place-content-center" onClick={handleUpvote}>
                 {" "}
                 <FaArrowUp /> Upvote
               </button>
-              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border-2 flex gap-2 p-4 place-content-center" onClick={handleDownvote}>
+              <button className="bg-transparent w-[30%] py-2 text-white mb-4 rounded-3xl border-white border flex gap-2 p-4 place-content-center" onClick={handleDownvote}>
                 {" "}
                 <FaLongArrowAltDown />
                 Downvote
