@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 
 const Home = () => {
   return (
-    <main>
+    <main className="w-[100vw]">
       <Hero/>
           
     </main>

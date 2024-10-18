@@ -23,7 +23,7 @@ const Reports = () => {
   }
 
   return (
-    <main className="bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A]">
+    <main className="w-[100vw] bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A]">
       <section className="bg-gradient-to-r  from-[#080B2A] via-[#2A3E84] to-[#080B2A]">
         <div className="w-screen bg-[#040927]">
           <div className="lg:w-[90%] md:w-[90%] w-[100%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover bg-center"

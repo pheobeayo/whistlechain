@@ -31,7 +31,7 @@ const Hero = () => {
                                 Secure. Anonymous. Decentralized. Report misconduct
                                 safely and help ensure transparency.
                             </p>
-                            <div className="mt-6">
+                            <div className="mt-6 flex flex-col lg:flex-row md:flex-row">
                               <button className="bg-[#15BFFD] rounded-3xl p-4 text-[#101415] mr-4 lg:text-[20px] md:text-[20px] text-[18px]" onClick={handleReport}>
                                     Whistleblow
                                 </button>
