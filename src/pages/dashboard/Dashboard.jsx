@@ -69,7 +69,7 @@ const Dashboard = () => {
           <table className="table-fixed  border border-400 rounded-2xl  border-spacing-2 w-[100%]">
             <thead className="p-4">
               <tr className="text-white font-serif font-normal">
-                <th className="border border-white">ReportID</th>
+                <th className="border border-white">Report ID</th>
                 <th className="border border-white">Reports</th>
                 <th className="border border-white">Misconduct</th>
                 <th className="border border-white">Track </th>

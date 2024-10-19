@@ -99,8 +99,7 @@ const WhistleDetails = () => {
   
   return (
     <main className="bg-[#040927]">
-      <div className="w-[95%] mx-auto p-8">
-        <div className="flex lg:flex-row md:flex-row flex-col gap-2 my-4">
+      <div className="flex lg:flex-row md:flex-row flex-col gap-2 my-8 ">
           <div className="relative w-[40%]">
             <input
               className="appearance-none bg-transparent border-2 pl-10 border-white hover:border-[#15BFFD] transition-colors rounded-md w-full py-2 px-3 text-white leading-tight focus:outline-none focus:ring-[#15BFFD] focus:border-[#15BFFD] focus:shadow-outline p-4"
@@ -132,6 +131,8 @@ const WhistleDetails = () => {
             </button>
           </div>
         </div>
+      
+        
        <section className="flex lg:flex-row md:flex-row flex-col justify-between">
           <div className="lg:w-[45%] md:w-[45%] w-[100%] border-gradient-to-r  from-[#69EACB] via-[#EACCF8] to-[#6654F1]  border-2 rounded-lg p-4">
             <img src={whistleImage} alt="" className="rounded-lg w-[100%]" />
@@ -175,7 +176,7 @@ const WhistleDetails = () => {
             </div>
           </div>
         </section>
-      </div>
+      
     </main>
   );
 };
