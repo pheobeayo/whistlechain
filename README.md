@@ -60,6 +60,12 @@ Tokens could be purchased and used for:
 All reports and validations are permanently stored on the blockchain, ensuring that records cannot be tampered with or deleted, providing a reliable audit trail.
 Decentralized Voting Mechanism
 
+- 1
+![Screenshot](./public/screenshot.jpg)
+
+- 2
+![Screenshot](./public/screenshot2.jpg)
+
 
 ## Further Works
 1. Dispute Resolution: In case of disagreements on reports or voting results, the whistleblower can raise a dispute through the decentralized dispute mechanism that allows validators to review and vote on the case again.
